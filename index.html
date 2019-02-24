@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SpaceX Control Panel</title>
+    <meta name="description" content="SpaceX Control Panel">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div>
+    <div id="header-container">
+        <div id="crew-block" class="block">
+            <div class="block-text">
+                <small class="block-label">Crew</small>
+                <div class="block-title">DRAGON</div>
+            </div>
+        </div>
+        <div id="perigee-block" class="block">
+            <div class="block-text">
+                <small class="block-label">Perigee</small>
+                <div class="block-title">185.013<span class="blue">m</span></div>
+            </div>
+            <div class="block-icon-m">
+                <i class="icon icon-minus">
+                    <img src="img/minus%20(1).png" alt="blue minus">
+                </i>
+            </div>
+        </div>
+        <div id="apogee-block" class="block">
+            <div class="block-text">
+                <small class="block-label">Apogee</small>
+                <div class="block-title">360.304<span class="blue">m</span></div>
+            </div>
+            <div class="block-icon-m">
+                <i class="icon icon-minus"><img src="img/minus%20(1).png" alt="blue minus"></i>
+            </div>
+        </div>
+        <div id="relative-altitude-block" class="block">
+            <div class="block-text">
+                <small class="block-label">Relative Altitude</small>
+                <div class="block-title">50,948 <span class="blue">m</span></div>
+            </div>
+            <div class="arrow-down">
+                <i class="icon-arrow-bottom">
+                    <img src="img/multimedia-option.png" alt="arrow down">
+                </i>
+            </div>
+            <div class="special-arrow"></div>
+        </div>
+        <div id="range-to-iss-block" class="block">
+            <div class="block-text">
+                <small class="block-label">Range to ISS</small>
+                <div class="block-title">625,713<span class="blue">m</span></div>
+            </div>
+            <div class="arrow down">
+                <i class="icon-arrow-bottom">
+                    <img src="img/multimedia-option.png" alt="arrow down">
+                </i>
+            </div>
+            <div class="special-arrow"></div>
+        </div>
+    </div>
+</div>
+
+<div id="planet-view" class="row">
+    <img class="planet-view-image" src="img/uk-france-night-2016-EARTH1116.jpg" alt="earth from space">
+</div>
+
+<div>
+    <div id="current-time" class="row">
+        <div id="time-big" class="block time">
+            <div id="days-big-clock">Day 131</div>
+            <div id="big-clock">13:46:11</div>
+        </div>
+        <div id="speed-chart" class="block time">
+            <img id="speed-chart-icon" src="img/NSW.png" alt="mathematical graph">
+        </div>
+        <div id="block-time-one">
+            <div class="next-burn-enabled-time">
+            <div class="next-burn-enabled">
+                <div id="paralel">Next Burn</div>
+                <div id="paralel-blue-text">Enabled
+                    <span class="blue-circle">
+                    <img src="img/circular-shape-silhouette.png" alt="circle">
+                </span>
+                </div>
+            </div>
+            <div>
+                <div id="timer-clear">-0:05:48</div>
+            </div>
+            <div class="time-day">
+                <div id="paralel-time">13:52:00</div>
+                <div id="paralel-day">DAY 131</div>
+            </div>
+            </div>
+        </div>
+        <div id="block-time-two">
+            <div>
+                <div class="delta">Target
+                    <span>
+                    <img src="img/delta.png" alt="delta">
+                </span>V
+                </div>
+            </div>
+            <div>
+                <div class="delta-big">33.5 <span class="closer">m/s</span></div>
+            </div>
+            <div>
+                <div class="blue">Thruster Temps</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="alarms-all-systems">
+        <div id="alarms">
+                <img src="img/zero.png" alt="zero">
+                <span id="half-block">ALARMS</span>
+        </div>
+        <div class="all-systems-and-img">
+        <span id="half-block-right">ALL SYSTEMS NOMINAL</span>
+        <span id="tick">
+            <img src="img/tick.png" alt="tick">
+        </span>
+        </div>
+    </div>
+
+
+
+    <div id="next-actions" class="row">
+
+        <div id="one-of-four">
+
+            <div id="time-next-los-day">
+                <div id="time-row-four">-0:08:24</div>
+                <div id="next-los">
+                    <div>Next LOS</div>
+                    <div>(00:03:17)</div>
+                </div>
+                <div id="time-day-only">
+                    <div>13:54:36</div>
+                    <div>Day 131</div>
+                </div>
+            </div>
+
+            <div id="estimated-time-day">
+                <div id="time-estimated-next">-02:51:02</div>
+                <div id="estimates-iss-arrival">Estimated ISS Arrival</div>
+                <div id="time-day">
+                    <div>16:37:15</div>
+                    <div>Day 131</div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="second-of-four">
+
+            <div class="second-of-four">
+
+                <div class="first-column">
+            <span id="time-second-of-four">-0:23:23</span>
+            <span id="next-deorbit">
+                <div>Next Deorbit Window</div>
+                <div>Pacific</div>
+            </span>
+            <span id="time-in-next-deorbit">
+                <div>14:09:36</div>
+                <div>Day 131</div>
+            </span>
+                </div>
+
+
+                    <img id="stroke" src="img/line-blue.png" alt="border-above">
+
+
+            <div class="third-column">
+                <span id="current-breakout">
+                    <div class="blue">Current Breakout</div>
+                    <div>Retrograde</div>
+                </span>
+                <span id="v-letter">
+                    <img src="img/delta.png" alt="delta">V = 5.0 m/s
+                </span>
+            </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <div id="schedule-events-mark">
+        <div id="schedule-before-all">Schedule</div>
+        <div id="all-events-after-schedule">ALL EVENTS
+            <span>
+            <img src="img/correct-symbol%20%20(1).png" alt="done">
+        </span>
+        </div>
+
+        <div id="next-after-schedule"></div>
+    </div>
+    <div id="one-color-for-schedule">
+    <div id="four-different-time">
+        <div class="four-different-time">13:10:00</div>
+        <div class="four-different-time">13:37:00</div>
+        <div class="four-different-time">13:46:45</div>
+        <div class="four-different-time">13:52:10</div>
+    </div>
+    <div>
+        <img id="image-slice" src="img/Slice_6.png" alt="image from bottom to top line">
+    </div>
+    <div id="schedule-information">
+        <div id="schedule-row-one">
+            <div>Rendezvous Burn GO/No-GO</div>
+            <div class="schedule-row-one">Ground</div>
+        </div>
+        <div>
+            <img class="line-blue" src="img/line-blue.png" alt="line-blue">
+        </div>
+        <div id="schedule-row-two">
+            <div>Prepare for rendezvous burn</div>
+            <div class="schedule-row-two">Crew</div>
+        </div>
+        <div>
+            <img class="line-blue" src="img/line-blue.png" alt="line-blue">
+        </div>
+        <div id="schedule-row-three">
+            <div>Rendezvous burn slow</div>
+            <div class="schedule-row-three">Dragon</div>
+        </div>
+        <div>
+            <img class="line-blue" src="img/line-blue.png" alt="line-blue">
+        </div>
+        <div id="schedule-row-four">
+            <div>Rendezvous Burn</div>
+            <div class="schedule-row-four">Dragon</div>
+        </div>
+    </div>
+    </div>
+ <div id="clear"></div>
+
+    <div id="rendezvous" class="container">
+        <div class="row row-double-header">
+            <div class="header header-first">Rendezvous</div>
+            <div class="header header-second">Approach</div>
+        </div>
+
+        <div id="all-approach-container" class="row approach">
+            <div class="approach-row-one">
+                <div class="approach-cell">Ground</div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-block g-1"></div>
+                <div class="approach-block g-2"></div>
+                <div class="approach-block g-3"></div>
+                <div class="approach-block g-4"></div>
+                <div class="approach-block g-5"></div>
+                <div class="approach-block g-6"></div>
+                <div class="approach-block g-7"></div>
+            </div>
+            <div class="approach-row-two">
+                <div class="approach-cell">TDRS</div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-block t-1"></div>
+                <div class="approach-block t-2"></div>
+                <div class="approach-block t-3"></div>
+                <div class="approach-block t-4"></div>
+                <div class="approach-block t-5"></div>
+                <div class="approach-block t-6"></div>
+                <div class="approach-block t-7"></div>
+                <div class="approach-block t-8"></div>
+                <div class="approach-block t-9"></div>
+                <div class="approach-block t-10"></div>
+            </div>
+            <div class="approach-row-three">
+                <div class="approach-cell">ISS</div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-block i-1"></div>
+                <div class="approach-block i-2"></div>
+                <div class="approach-block i-3"></div>
+                <div class="approach-block i-4"></div>
+                <div class="approach-block i-5"></div>
+                <div class="approach-block i-6"></div>
+                <div class="approach-block i-7"></div>
+                <div class="approach-block i-8"></div>
+                <div class="approach-block i-9"></div>
+                <div class="approach-block i-10"></div>
+                <div class="approach-block i-11"></div>
+                <div class="approach-block i-12"></div>
+                <div class="approach-block i-13"></div>
+                <div class="approach-block i-14"></div>
+            </div>
+            <div class="approach-row-four">
+                <div class="approach-cell">Eclipse</div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-block e-1"></div>
+                <div class="approach-block e-2"></div>
+                <div class="approach-block e-3"></div>
+                <div class="approach-block e-4"></div>
+                <div class="approach-block e-5"></div>
+                <div class="approach-block e-6"></div>
+            </div>
+            <div class="approach-row-five">
+                <div class="approach-cell">Burn</div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-block burn-1"></div>
+                <div class="approach-block burn-2"></div>
+                <div class="approach-block burn-3"></div>
+                <div class="approach-block burn-4"></div>
+                <div class="approach-block burn-5"></div>
+            </div>
+            <div class="approach-row-six">
+                <div class="approach-cell">Crew</div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-cell"></div>
+                <div class="approach-block c-1"></div>
+                <div class="approach-block c-2"></div>
+            </div>
+            <div class="approach-row-seven">
+                    <div class="time-container">12:30</div>
+                    <div class="time-container">13:00</div>
+                    <div class="time-container">13:30</div>
+                    <div class="time-container">14:00</div>
+                    <div class="time-container">14:30</div>
+                    <div class="time-container">15:00</div>
+                    <div class="time-container">15:30</div>
+                    <div class="time-container">16:00</div>
+                    <div class="time-container">16:30</div>
+                    <div class="time-container"></div>
+            </div>
+            <div class="approach-progress"></div>
+        </div>
+
+        <div id="progress" class="row">
+            <div id="progress-value">
+
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
